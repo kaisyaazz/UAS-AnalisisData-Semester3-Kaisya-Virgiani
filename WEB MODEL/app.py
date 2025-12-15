@@ -19,7 +19,7 @@ antar provinsi di Indonesia.
 # =====================
 # LOAD DATA
 # =====================
-df = pd.read_csv("fitur.csv")
+df = pd.read_csv("WEB MODEL/fitur.csv")
 
 # st.write("Kolom CSV:", df.columns.tolist())
 
@@ -198,4 +198,5 @@ if submit:
         - Replikasi praktik terbaik ke wilayah cluster lain
         - Monitoring dan evaluasi berkelanjutan
         """)
+
 
