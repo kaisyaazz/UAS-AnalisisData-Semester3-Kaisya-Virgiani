@@ -136,8 +136,8 @@ with st.form("cluster_form"):
     submit = st.form_submit_button("Analisis")
 
 if submit:
-    model = pickle.load(open("model_clustering.pkl", "rb"))
-    scaler = pickle.load(open("scaler.pkl", "rb"))
+    model = pickle.load(open("WEB MODEL/model_clustering.pkl", "rb"))
+    scaler = pickle.load(open("WEB MODEL/scaler.pkl", "rb"))
 
     X = np.array([[jf, jk, rb, tb]])
     X_scaled = scaler.transform(X)
@@ -198,5 +198,6 @@ if submit:
         - Replikasi praktik terbaik ke wilayah cluster lain
         - Monitoring dan evaluasi berkelanjutan
         """)
+
 
 
